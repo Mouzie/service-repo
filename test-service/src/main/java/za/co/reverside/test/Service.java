@@ -16,6 +16,6 @@ public class Service{
 
 	@RequestMapping(path="api/java/time")
 	public String getTime(){
-		return new Date.toString();
+		return new Date().toString();
 	}
 }
