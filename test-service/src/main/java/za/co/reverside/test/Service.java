@@ -25,10 +25,20 @@ public class Service{
 	@RequestMapping(path="api/java/calculate" , method=RequestMethod.GET )
 	public int calc(){
 		int a,b,c;
-		a =  10;
+		a = 10;
 		b = 20;
 		c = a + b;
 
 		return c;
+	}
+
+	@RequestMapping(path="api/java/book", method=RequestMethod.GET)
+	public Book testBook(){
+		Book book = new Book();
+		book.setTitle("Hunger Games");
+		book.setAuthor("Suzanne Collins");
+		book.setIsbn(2020202);
+
+		return book;
 	}
 }
