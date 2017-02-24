@@ -1,7 +1,7 @@
 package za.co.reverside.test;
 
-import org.springframework.web.bind.RestController;
-import org.springframework.web.bind.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @RestController
 public class Service{
