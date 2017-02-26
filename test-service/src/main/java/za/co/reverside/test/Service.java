@@ -41,4 +41,11 @@ public class Service{
 
 		return book;
 	}
+
+
+	@RequestMapping(path="api/java/display")
+	public String display(){
+		return "Servce Display.";
+	}
+
 }
