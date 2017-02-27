@@ -14,4 +14,19 @@ public class Service{
 	public String timeTest(){
 		return new Date().toString();
 	}
+
+	@RequestMapping(path="api/name")
+	public String name(){
+		return "Moses Mathebula";
+	}
+
+	@RequestMapping(path="api/maths")
+	public double numbers(){
+		double a,s,d;
+		s = 2.5;
+		d = 55.0;
+		a = s + d;
+
+		return a;
+	}
 }
