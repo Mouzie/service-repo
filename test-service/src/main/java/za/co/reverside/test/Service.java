@@ -32,7 +32,7 @@ public class Service{
 		return c;
 	}
 
-	@RequestMapping(path="api/java/book", method=RequestMethod.GET)
+	@RequestMapping(path="api/java/book", method=RequestMethod.POST)
 	public Book testBook(){
 		Book book = new Book();
 		book.setTitle("Hunger Games");
@@ -48,4 +48,18 @@ public class Service{
 		return "Servce Display.";
 	}
 
+	@RequestMapping(path="api/java/coffee", method=RequestMethod.PUT)
+	public Coffee testCoffee(){
+		Coffee coffee = new Coffee();
+		coffee.setBrand("Jacobs");
+		coffee.setSize(20.1);
+
+		return coffee;
+	}
+
+	@RequestMapping(path="api/java/delete", method=RequestMethod.DELETE)
+	public String delete(){
+
+		return "delete";
+	}
 }
